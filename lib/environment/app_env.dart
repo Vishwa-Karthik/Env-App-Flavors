@@ -13,6 +13,12 @@ abstract class EnvInfo {
 
   static String get envName => _environment._envName;
   static String get baseUrl => dotenv.get('baseUrl');
+  static String get firebaseApiKey => dotenv.get('apiKey');
+  static String get firebaseAuthDomain => dotenv.get('authDomain');
+  static String get firebaseProjectId => dotenv.get('projectId');
+  static String get firebaseStorageBucket => dotenv.get('storageBucket');
+  static String get firebaseMessagingId => dotenv.get('messagingSenderId');
+  static String get firebaseAppId => dotenv.get('appId');
   static AppEnvironment get environment => _environment;
   static bool get isProduction => _environment == AppEnvironment.PROD;
 }

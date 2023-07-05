@@ -18,8 +18,30 @@
 
   // Load the JavaScript file for the selected app flavor
   var script = document.createElement('script');
-  script.src = appFlavor + '/main.dart.js';
+  script.src = 'lib/environment/'+ appFlavor + '/main.dart.js';
   document.head.appendChild(script);
+
+ 
+</script>
+
+<!-- <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAvM4B-1hGN2otzAZ8DGP69TGUn2nGPsv0",
+    authDomain: "env-setup-dev.firebaseapp.com",
+    projectId: "env-setup-dev",
+    storageBucket: "env-setup-dev.appspot.com",
+    messagingSenderId: "260510583849",
+    appId: "1:260510583849:web:5d4156afb6c6213f1b6038"
+  }; -->
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
 </script>
 
   <base href="$FLUTTER_BASE_HREF">
