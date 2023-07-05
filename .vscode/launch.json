@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Launch Dev",
+        "request": "launch",
+        "type": "dart",
+        "program": "lib/environment/dev/main.dart",
+        "args": ["-t","lib/environment/dev/main.dart","--flavor", "dev"]
+      },
+      {
+        "name": "Launch Production",
+        "request": "launch",
+        "type": "dart",
+        "program": "lib/environment/prod/main.dart",
+        "args": ["-t","lib/environment/prod/main.dart","--flavor", "prod"]
+    }
+  ]
+}
